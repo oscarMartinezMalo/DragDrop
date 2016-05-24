@@ -3,9 +3,9 @@
 
 $(document).ready(function () {
     $('.object').on('dragstart', dragging);
-    //$('.object').on('dragend', draggingEnded);
-    //$('.cover').on('dragenter', preventDefault);
-    //$('.cover').on('dragover', preventDefault);
+    $('.object').on('dragend', draggingEnded);
+    $('.cover').on('dragenter', preventDefault);
+    $('.cover').on('dragover', preventDefault);
     $('.cover').on('drop', droppingItem);
 });
 
